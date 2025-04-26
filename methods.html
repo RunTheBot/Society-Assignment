@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document metadata and essential resources -->
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methods - Digital Freedom</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <!-- Navigation Bar: Fixed at the top with consistent styling across all pages -->
+    <nav class="bg-white dark:bg-gray-800 shadow-lg fixed w-full top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between h-16">
+          <!-- Site logo/title with link to homepage -->
+          <div class="flex items-center">
+            <a href="/" class="text-xl font-bold text-gray-800 dark:text-white">
+              Digital Freedom
+            </a>
+          </div>
+          <!-- Main navigation menu with links to all content pages -->
+          <div class="flex items-center space-x-4">
+            <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Home</a>
+            <a href="/methods.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Methods</a>
+            <a href="/implications.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Implications</a>
+            <a href="/solutions.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Solutions</a>
+            <a href="/sources.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Sources</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section: Page title banner with background image and gradient overlay -->
+    <div class="pt-20 relative min-h-[40vh] flex items-center" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1623479322729-28b25c16b011?q=80&w=2070') no-repeat center center; background-size: cover;">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-8">Censorship Methods</h1>
+        <p class="text-xl text-gray-200 mb-12 max-w-3xl mx-auto">
+          Exploring the technical approaches and implementation of internet filtering in educational settings
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Common Methods Section: Describes major filtering approaches -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Common Filtering Methods</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- URL Filtering Card: Explains domain-based blocking -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">URL Filtering</h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              URL filtering blocks access to specific web addresses based on predefined lists or categories. Schools typically:
+            </p>
+            <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+              <li>Maintain blacklists of prohibited websites</li>
+              <li>Use category-based filtering (social media, gaming, etc.)</li>
+              <li>Implement whitelist-only access for younger students</li>
+              <li>Regular updates to blocked URL databases</li>
+            </ul>
+          </div>
+          <!-- Content Filtering Card: Explains real-time content analysis -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Content Filtering</h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              Content filtering analyzes web page content in real-time to block inappropriate material:
+            </p>
+            <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+              <li>Keyword and phrase detection</li>
+              <li>Image analysis and filtering</li>
+              <li>Dynamic content evaluation</li>
+              <li>SSL inspection for encrypted traffic</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Approaches Section: Details specific implementation strategies -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Technical Approaches</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <!-- Primary Methods Card: Lists common technical blocking methods -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Primary Methods</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <span class="text-gray-900 dark:text-white font-semibold">IP Address Blocking</span>
+                  <p class="text-gray-700 dark:text-gray-300 text-sm">Restricts access by blocking specific IP addresses, though may result in over-blocking</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <span class="text-gray-900 dark:text-white font-semibold">DNS Tampering/Filtering</span>
+                  <p class="text-gray-700 dark:text-gray-300 text-sm">Alters or blocks DNS requests to prevent access to certain domains</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <span class="text-gray-900 dark:text-white font-semibold">Keyword Filtering</span>
+                  <p class="text-gray-700 dark:text-gray-300 text-sm">Monitors and blocks content containing specific keywords</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <span class="text-gray-900 dark:text-white font-semibold">Content Category Filtering</span>
+                  <p class="text-gray-700 dark:text-gray-300 text-sm">Blocks entire categories of websites using commercial filtering databases</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Implementation Methods Card: Explains deployment strategies -->
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Implementation Methods</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <span class="text-gray-900 dark:text-white font-semibold">Network Firewalls</span>
+                  <p class="text-gray-700 dark:text-gray-300 text-sm">Centralized devices enforcing filtering rules for all network users</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <span class="text-gray-900 dark:text-white font-semibold">Software Filters</span>
+                  <p class="text-gray-700 dark:text-gray-300 text-sm">Installed on individual devices, especially for take-home equipment</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <span class="text-gray-900 dark:text-white font-semibold">Cloud-Based Filtering</span>
+                  <p class="text-gray-700 dark:text-gray-300 text-sm">Routes traffic through cloud providers that apply filtering policies</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Best Practices Card: Guidelines for effective implementation -->
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Best Practices for Implementation</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Left column of best practices -->
+            <div class="space-y-4">
+              <div class="border-l-4 border-blue-500 pl-4">
+                <h4 class="font-semibold text-gray-900 dark:text-white">Age-Appropriate Filtering</h4>
+                <p class="text-gray-700 dark:text-gray-300">Customize filtering policies based on student age and educational needs</p>
+              </div>
+              <div class="border-l-4 border-blue-500 pl-4">
+                <h4 class="font-semibold text-gray-900 dark:text-white">Access Request System</h4>
+                <p class="text-gray-700 dark:text-gray-300">Provide mechanisms for requesting access to blocked educational resources</p>
+              </div>
+            </div>
+            <!-- Right column of best practices -->
+            <div class="space-y-4">
+              <div class="border-l-4 border-blue-500 pl-4">
+                <h4 class="font-semibold text-gray-900 dark:text-white">Supervised Access</h4>
+                <p class="text-gray-700 dark:text-gray-300">Allow supervised unfiltered access in controlled settings</p>
+              </div>
+              <div class="border-l-4 border-blue-500 pl-4">
+                <h4 class="font-semibold text-gray-900 dark:text-white">Regular Review</h4>
+                <p class="text-gray-700 dark:text-gray-300">Continuously update filter lists to minimize over-blocking</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Implementation Section: Network and management details -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Technical Implementation</h2>
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Network Architecture Column: How filtering integrates with infrastructure -->
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Network Architecture</h3>
+              <div class="space-y-4">
+                <div class="border-l-4 border-blue-500 pl-4">
+                  <h4 class="font-semibold text-gray-900 dark:text-white">Gateway Filtering</h4>
+                  <p class="text-gray-700 dark:text-gray-300">Traffic inspection at network entry/exit points</p>
+                </div>
+                <div class="border-l-4 border-blue-500 pl-4">
+                  <h4 class="font-semibold text-gray-900 dark:text-white">VLAN Segmentation</h4>
+                  <p class="text-gray-700 dark:text-gray-300">Separate networks for different access levels</p>
+                </div>
+                <div class="border-l-4 border-blue-500 pl-4">
+                  <h4 class="font-semibold text-gray-900 dark:text-white">SSL Decryption</h4>
+                  <p class="text-gray-700 dark:text-gray-300">HTTPS traffic inspection capabilities</p>
+                </div>
+              </div>
+            </div>
+            <!-- Management Systems Column: Administrative controls -->
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Management Systems</h3>
+              <div class="space-y-4">
+                <div class="border-l-4 border-green-500 pl-4">
+                  <h4 class="font-semibold text-gray-900 dark:text-white">Central Administration</h4>
+                  <p class="text-gray-700 dark:text-gray-300">Unified management of filtering policies</p>
+                </div>
+                <div class="border-l-4 border-green-500 pl-4">
+                  <h4 class="font-semibold text-gray-900 dark:text-white">Policy Distribution</h4>
+                  <p class="text-gray-700 dark:text-gray-300">Automated updates to filtering rules</p>
+                </div>
+                <div class="border-l-4 border-green-500 pl-4">
+                  <h4 class="font-semibold text-gray-900 dark:text-white">Reporting Tools</h4>
+                  <p class="text-gray-700 dark:text-gray-300">Analytics and compliance monitoring</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section: Copyright information -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-center text-gray-400">
+          Created for Digital Issues in Society Assignment © 2025
+        </p>
+      </div>
+    </footer>
+
+    <!-- Main script entry point for TypeScript functionality -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document metadata and essential resources -->
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Freedom</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <!-- Navigation Bar: Fixed at the top of all pages providing site-wide navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-lg fixed w-full top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between h-16">
+          <!-- Site logo/title -->
+          <div class="flex items-center">
+            <a href="/" class="text-xl font-bold text-gray-800 dark:text-white">
+              Digital Freedom
+            </a>
+          </div>
+          <!-- Main navigation links -->
+          <div class="flex items-center space-x-4">
+            <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Home</a>
+            <a href="/methods.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Methods</a>
+            <a href="/implications.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Implications</a>
+            <a href="/solutions.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Solutions</a>
+            <a href="/sources.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-500">Sources</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section: Full-width video background with overlay text -->
+    <div class="pt-20 relative min-h-[70vh] flex items-center">
+      <!-- Background video with dark overlay -->
+      <div class="absolute inset-0 w-full h-full overflow-hidden z-0">
+        <video autoplay muted loop class="w-full h-full object-cover">
+          <source src="/hero_1080p.mp4" type="video/mp4">
+        </video>
+        <!-- Semi-transparent overlay to improve text visibility -->
+        <div class="absolute inset-0" style="background: rgba(0, 0, 0, 0.6)"></div>
+      </div>
+      <!-- Hero content: Main heading, tagline, and CTA buttons -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-8">Internet Censorship in Schools</h1>
+        <p class="text-xl text-gray-200 mb-12 max-w-3xl mx-auto">
+          Examining the complex balance between access to information and student safety.
+        </p>
+        <!-- Call-to-action buttons -->
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
+          <a href="#introduction" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition duration-300">
+            Learn More
+          </a>
+          <a href="/methods.html" class="px-8 py-3 bg-gray-800 hover:bg-gray-900 text-white font-medium rounded-lg transition duration-300">
+            Explore Methods
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <div id="introduction" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Introduction Section: Two-column layout with text and key points -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Introduction</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Left column: Main introduction text -->
+          <div class="prose dark:prose-invert lg:prose-lg max-w-none">
+            <p>Internet censorship in schools is a controversial topic. It has to balance both student safety with access to information. Schools implement various filtering measures to protect students from inappropriate content, but these systems can sometimes impede legitimate educational pursuits.</p>
+            <p>This project examines the methods of internet censorship in schools, their effectiveness, and the broader implications for students' digital literacy and education.</p>
+          </div>
+          <!-- Right column: Key aspects in bullet points -->
+          <div class="card">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Key Aspects Covered</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700 dark:text-gray-300">Common censorship methods in educational settings</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700 dark:text-gray-300">Educational impact of filtering systems</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700 dark:text-gray-300">Ethical considerations of internet restrictions</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700 dark:text-gray-300">Balanced approaches to internet access in schools</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Cards Section: Visual navigation to key topic pages -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Explore Key Topics</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Methods Card: Links to methods.html -->
+          <div class="card hover:shadow-xl transition-all duration-300">
+            <div class="relative h-48 mb-4 overflow-hidden rounded-t-lg">
+                <img src="https://images.unsplash.com/photo-1536925155833-43e9c2b2f499?q=80&w=2070" 
+                   alt="Censorship Methods" 
+                   class="w-full h-full object-cover"
+                   title="Photo by Philippe Bout on Unsplash">
+              <div class="absolute inset-0 flex items-center justify-center" style="background: rgba(0, 0, 0, 0.2)">
+                <h3 class="text-2xl font-bold text-white">Censorship Methods</h3>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              Explore the various techniques used to filter and monitor internet access in educational settings.
+            </p>
+            <a href="/methods.html" class="block text-center py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition">
+              Learn More
+            </a>
+          </div>
+          
+          <!-- Implications Card: Links to implications.html -->
+          <div class="card hover:shadow-xl transition-all duration-300">
+            <div class="relative h-48 mb-4 overflow-hidden rounded-t-lg">
+              <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=2070" 
+                   alt="Implications" 
+                   class="w-full h-full object-cover"
+                   title="Photo by Susan Q Yin on Unsplash">
+              <div class="absolute inset-0 flex items-center justify-center" style="background: rgba(0, 0, 0, 0.2)">
+                <h3 class="text-2xl font-bold text-white">Implications</h3>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              Understand how internet censorship affects education, digital literacy, and student development.
+            </p>
+            <a href="/implications.html" class="block text-center py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition">
+              Learn More
+            </a>
+          </div>
+          
+          <!-- Solutions Card: Links to solutions.html -->
+          <div class="card hover:shadow-xl transition-all duration-300">
+            <div class="relative h-48 mb-4 overflow-hidden rounded-t-lg">
+              <img src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?q=80&w=2070" 
+                   alt="Solutions" 
+                   class="w-full h-full object-cover"
+                   title="Photo by Unseen Studio on Unsplash">
+              <div class="absolute inset-0 flex items-center justify-center" style="background: rgba(0, 0, 0, 0.2)">
+                <h3 class="text-2xl font-bold text-white">Solutions</h3>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              Discover personal-level approaches to bypass internet restrictions in educational environments.
+            </p>
+            <a href="/solutions.html" class="block text-center py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition">
+              Learn More
+            </a>
+          </div>
+          
+          <!-- Sources Card: Links to sources.html -->
+          <div class="card hover:shadow-xl transition-all duration-300">
+            <div class="relative h-48 mb-4 overflow-hidden rounded-t-lg">
+              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2070" 
+                   alt="Sources" 
+                   class="w-full h-full object-cover"
+                   title="Photo by Viktor Talashuk on Unsplash">
+              <div class="absolute inset-0 flex items-center justify-center" style="background: rgba(0, 0, 0, 0.6)">
+                <h3 class="text-2xl font-bold text-white">Sources</h3>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              Review the research and resources that inform this analysis of internet censorship in schools.
+            </p>
+            <a href="/sources.html" class="block text-center py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer: Copyright information and additional site details -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-center text-gray-400">
+          Created for Digital Issues in Society Assignment © 2025
+        </p>
+      </div>
+    </footer>
+
+    <!-- Main script entry point for TypeScript functionality -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
